@@ -1,40 +1,78 @@
--- ds.page: Welcome to doc-site
+-- import: fifthtry.github.io/button
+-- import: fastn-community.github.io/inter-typography
+
+-- ds.page:
+-- ftd.column:
+padding.px: 40
+padding-top.px: 60
+width.fixed.px: 450
+height.fixed.px: 400
+background.solid: #f0f0f0
+
+-- ftd.column: 
+height: fill-container
+width: fill-container
+align-content: top-center
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- ftd.text: Login
+style: bold
+role: $inherited.types.copy-large
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- ftd.text-input:
+type: text
+placeholder: Username
+padding-horizontal.px: 16
+padding-vertical.px: 8
+margin-vertical.px: 10
+width: fill-container
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 8
+multiline: false
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- ftd.text-input:
+type: text
+placeholder: Password
+padding-horizontal.px: 16
+padding-vertical.px: 8
+margin-vertical.px: 10
+width: fill-container
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 8
+multiline: false
 
--- ds.h3: 🚀 Fast Track 
+-- ftd.row: 
+margin-left.px: 220
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- ftd.text: Forgot Password?
+color: darkblue
+link: #
 
--- ds.h3: 🌟 Whats next?
+-- end: ftd.row
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
+-- ftd.row: 
+padding-top.px: 30
+padding.px: 20
 
--- ds.h3: 👀 Want to learn more?
+-- button.button: Login
+role: secondary
+medium: true
+link: #
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- end:ftd.row
 
+-- ftd.row: 
+spacing.fixed.px: 3
 
--- ds.h3: 🎯 Used by?
+-- ftd.text: New User?
 
-Our all documentation sites uses this `doc-site` theme.
+-- ftd.text: Register
+color: darkblue
+link: #
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
+-- end: ftd.row
+-- end: ftd.column
+-- end: ftd.column
 -- end: ds.page
