@@ -5,7 +5,8 @@ favicon: /-/at-the-vr.github.io/challenge-2/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
--- fastn.dependency: fastn-community.github.io/roboto-typography
+-- fastn.dependency: fastn-community.github.io/inter-typography
+-- fastn.dependency: fifthtry.github.io/button
 
 -- fastn.auto-import: at-the-vr.github.io/challenge-2/FASTN/ds
 -- fastn.auto-import: at-the-vr.github.io/challenge-2/assets
@@ -15,4 +16,4 @@ favicon: /-/at-the-vr.github.io/challenge-2/favicon.ico
 
 # Home: index.html
 
-- Right Sidebar Sample: /sidebar/
+;; - Right Sidebar Sample: /sidebar/
