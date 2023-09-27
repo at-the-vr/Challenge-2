@@ -1,0 +1,40 @@
+-- component button:
+string theMediumButton:
+string thelinkM:
+boolean $is-hover-M: false
+ftd.color text-color: $inherited.colors.text-strong
+ftd.color bg-color: $inherited.colors.background.base
+optional ftd.shadow hover-shadow:
+optional ftd.responsive-type role:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+spacing.fixed.px: 40
+
+-- ftd.text: $button.theMediumButton
+role: $inherited.types.button-medium
+padding-vertical.px: 10
+padding-horizontal.px: 50
+border-radius.px: 100
+style: bold
+text-align: center
+color: $button.text-color
+background.solid: $button.bg-color
+shadow if { button.is-hover-M } : $button.hover-shadow
+$on-mouse-enter$: $ftd.set-bool($a = $button.is-hover-M, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.is-hover-M, v = false)
+link: $button.thelinkM
+open-in-new-tab: true
+
+-- end: ftd.row
+
+-- end: button
+
+-- ftd.color monochrome-dark:
+light: black
+dark: white
+
+-- ftd.color monochrome-light:
+light: #D6D6D6
+dark: #047cfc

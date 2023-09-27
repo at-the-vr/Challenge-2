@@ -1,23 +1,31 @@
 -- import: fifthtry.github.io/button
 -- import: fastn-community.github.io/inter-typography
+-- import: at-the-vr.github.io/challenge-2/lib
 
--- ds.page:
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: center
+background.solid: $theBgColor
+types: $inter-typography.types
+
 -- ftd.column:
 padding.px: 40
 padding-top.px: 60
 width.fixed.px: 450
 height.fixed.px: 400
 background.solid: #f0f0f0
+types: $inter-typography.types
 
 -- ftd.column: 
 height: fill-container
 width: fill-container
 align-content: top-center
-
+types: $inter-typography.types
 
 -- ftd.text: Login
 style: bold
-role: $inherited.types.copy-large
+role: $inherited.types.heading-large
 
 -- ftd.text-input:
 type: text
@@ -30,9 +38,10 @@ border-width.px: 1
 border-color: $inherited.colors.border
 border-radius.px: 8
 multiline: false
+role: $inherited.types.copy-small
 
 -- ftd.text-input:
-type: text
+type: password
 placeholder: Password
 padding-horizontal.px: 16
 padding-vertical.px: 8
@@ -42,6 +51,7 @@ border-width.px: 1
 border-color: $inherited.colors.border
 border-radius.px: 8
 multiline: false
+role: $inherited.types.copy-small
 
 -- ftd.row: 
 margin-left.px: 220
@@ -49,6 +59,7 @@ margin-left.px: 220
 -- ftd.text: Forgot Password?
 color: darkblue
 link: #
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 
@@ -56,23 +67,30 @@ link: #
 padding-top.px: 30
 padding.px: 20
 
--- button.button: Login
-role: secondary
-medium: true
-link: #
+-- lib.button:
+theMediumButton: Login
+thelinkM: #
+text-color: $lib.monochrome-dark
+bg-color: $lib.monochrome-light
 
 -- end:ftd.row
 
 -- ftd.row: 
 spacing.fixed.px: 3
 
--- ftd.text: New User?
-
--- ftd.text: Register
+-- ftd.text: New User? Register
 color: darkblue
 link: #
+role: $inherited.types.copy-small
 
 -- end: ftd.row
+
 -- end: ftd.column
+
 -- end: ftd.column
--- end: ds.page
+
+-- end: ftd.column
+
+-- ftd.color theBgColor: 
+light: #D6D6D6 
+dark: #1a1a1a
